@@ -1,12 +1,14 @@
 sudo: false
 language: node_js
+arch:
+  - amd64
+  - ppc64le
 node_js:
   - "10"
   - "9"
   - "8"
   - "6"
   - "4"
-  - "0.10"
 after_script:
   - npm run coveralls
 branches:
